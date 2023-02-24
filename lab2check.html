@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Checkbox example</title>
+        <script type = "text/javascript">
+            function display ()
+        {
+            var message = "you selected...";
+            if (eval("document.pizza.one.checked") == true )
+            message += "\n" + "mushrooms";
+            if (eval("document.pizza.two.checked") == true)
+            message += "\n" + "onions"
+            if (eval("document.pizza.three.checked") == true)
+            message += "\n" + "pepperoni"
+            if (eval("document.pizza.four.checked") == true)
+            message += "\n" + "spinach"
+            if (message == "you selected ...")
+            message = "plain cheese pizza ordered";
+            alert(message);
+        }
+    </script>
+
+    </head>
+    <body>
+        <div style="font-family: tahoma;">
+        <h2> choose the ingredidents for your pizza..</h2>
+        <form id = "form1" name="pizza" action="">
+            <input type="checkbox" name="one" />&nbsp;
+            mushrooms<br>
+            <input type="checkbox" name="two"/>&nbsp;
+            onions<br>
+            <input type="checkbox" name="three"/>&nbsp;
+            pepperoni<br>
+            <input type="checkbox" name="four"/>&nbsp;
+            spinach <br>
+            <br>
+            <input type="button" value="order" onclick="display()">
+        </form>
+        </div>
+
+    </body>
+</html>

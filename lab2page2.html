@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    Joseph Khananisho
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introduction to Web Page Dev. </title>
+    </head>
+    <body style="background-color: lavender; font-family: Tahoma; font-size: medium;">
+        <br>
+        <h2> enter the values and click the button</h2>
+        <br>
+        <form name="From1">
+            <input type="text" name="one">&nbsp;price
+            <br>
+            <input type="text" name="two">&nbsp;quanitity 
+            <br>
+            <input type="text" name="three">&nbsp;discount
+            <br>
+            <input type="button" value="find cost"
+            onclick= 'var cost = (one.value * two.value - three.value);
+            var result = (cost > 100) ? "more than $100" : "$" + cost;
+            window.alert("the cost is " + result);' />
+        </form>
+
+    </body>
+</html>

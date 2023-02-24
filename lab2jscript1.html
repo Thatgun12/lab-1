@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Using javascript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function display_message()
+            {
+                window.alert("click here to continue");
+            }
+            display_message();
+            document.write("<div style = 'color:white; '>");
+            document.write("<h1>Hello</h1>");
+            document.bgColor = "Blue"
+            document.write("</div>")
+            window.open("http://www.FYE.com", "WindowA", "width = 500, height = 500, scrollbars = yes");
+            document.write("the url for this page is" + document.url);
+            theDate = new Date();
+            document.write("local time: " + theDate.toLocalString());
+        </script>
+        <form id = "form1" action="">
+            <input type="button" value="Close" onclick="window.close();" />
+        </form>
+    </body>
+</html>
